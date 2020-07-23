@@ -13,7 +13,7 @@ public class MyJobListener implements JobExecutionListener {
 	@Override
 	public void afterJob(JobExecution je) {
 		System.out.println("After Job:" + je.getStatus());
-
+		System.out.println("After Job:" + je.getJobConfigurationName());
 	}
 
 }
